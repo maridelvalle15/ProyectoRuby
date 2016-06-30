@@ -7,9 +7,10 @@ module BFS
 			n = cola.shift
 			yield n
 			n.each do |hijo|
-				cola.push(hijo)
+				if not(hijo.nil)
+					cola.push(hijo)
+				end
 			end
 		end
 	end
-
-
+end
