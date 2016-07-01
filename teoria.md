@@ -32,12 +32,12 @@
 
 > Los métodos virtuales permiten asociar, al momento de compilar, una implementación de un método sobrecargado con una llamada del mismo; eliminando el **overhead** del despacho dinámico.
 
-[comment]: #  "Las vtables no tienen implementación de métodos."
+[comment]: #  "Si, ya que elimina overhead en tiempo a cambio de espacio. Busca directamente en la v-table"
 <[Si|No] [pero]...>
 
 > Cuando un lenguaje de POO tiene herencia simple no ocurre el problema del diamante pero de igual forma pueden existir llamadas ambiguas de métodos, dado que incorporar interfaces, módulos, protocolos, etc, no evita colisión de nombres.
 
-[comment]: #  "**Cierta primera parte, preguntar que la ultima es falsa."
+[comment]: #  "Si, porque independientemente de la herencia simple, se pueden importar módulos donde se definan el mismo nombre, y al llamar a alguno hay ambiguedad."
 <[Si|No] [pero]...>
 
 > El paso de mensaje es un término que se maneja en modelos concurrentes, también de POO y es equivalente a la llamada de una función.
